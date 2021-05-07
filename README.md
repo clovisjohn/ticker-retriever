@@ -9,7 +9,6 @@ To improve:
 Getting live data instead of manually exporting chat history
 Build a custom filter or train a model to recognize tokens tickers
 
-Complexity order: n
 
 
 GOAL:
