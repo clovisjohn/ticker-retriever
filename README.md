@@ -3,6 +3,7 @@
 Readme
 
 V0.1 Breakdown: identify tokens tickers using AI, ideal for finding upcoming projects.
+
 Manually exporting telegram chat history and then processing it using beautifulsoup and regex.
 Use spacy named entities recognization to isolate tokens tickers
 
