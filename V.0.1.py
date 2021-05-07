@@ -36,7 +36,7 @@ return a dictionary {token : occurences}
     f={}
 
     for ent in doc.ents:
-        if 3<=len(ent.text)<=5 and ent.text.isalpha():
+        if 3<=len(ent.text)<=5 and ent.text.isalpha() and ent.text not in spacy.lang.en.stop_words.STOP_WORDS:
             temp=ent.text.upper()
             if temp in f.keys():
                 f[temp]=f[temp]+1
