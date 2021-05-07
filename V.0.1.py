@@ -30,7 +30,7 @@ take a string as input, the string is the chat history file path
 return a dictionary {token : occurences}
     '''
 
-    nlp = spacy.load("en_core_web_sm")
+    nlp = nlp = spacy.load("en_core_web_sm", disable=["tok2vec", "tagger", "parser", "attribute_ruler", "lemmatizer"])
     doc = nlp(msg_list(m))
 
     f={}
