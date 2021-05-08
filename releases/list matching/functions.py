@@ -1,3 +1,8 @@
+import requests
+import re
+import json
+from bs4 import BeautifulSoup
+
 def coingecko_list():
     '''
 return the latest coingecko tokens list
