@@ -3,14 +3,15 @@ import re
 import json
 from bs4 import BeautifulSoup
 
-def coingecko_list():
+def default_list(m):
     '''
-return the latest coingecko tokens list
+input: url to a token list a json file
+return the latest tokens list
     '''
-    f = requests.get("https://api.coingecko.com/api/v3/coins/list")
+    f = requests.get(m)
     data = json.loads(f.text)
     
-    return [i["symbol"].upper() for i in data] + [j["name"] for j in data]
+    return [i["symbol"].upper() for i in data]
 
 
 def msg_list(m):
