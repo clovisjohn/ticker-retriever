@@ -10,4 +10,4 @@ if pancakeswap_list()==None:
     build_pancakeswap_list()
     
 
-token_list2("messages.html",full_list())
+print(token_list2("messages.html",full_list()))
