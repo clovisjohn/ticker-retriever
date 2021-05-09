@@ -21,7 +21,7 @@ update_uniswap_list(): Update "uniswap tickers.txt" with new tickers
 same set of functions
 
 ## how-to-launch
-You can try this script by running launch.py but first you need your chat history file saved as "messages.html"
+You can try this script by running launch.py but first you need your chat history file saved as "messages.html" in the same folder than "crypto-filter"
 
 ## Colab workflow
 >!git clone https://github.com/clovisjohn/crypto-filter.git
