@@ -47,13 +47,11 @@ def query_builder(lastId):
      }
     """ 
 
-def query_graph(query):
+def query_graph(query, endpoint):
     '''
 input: valid uniswap graphql query
 output: api response as a dictionary
     '''
-    endpoint = "https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v2"
-    
     
     r = requests.post(endpoint, json={"query": query})
     if r.status_code == 200:
