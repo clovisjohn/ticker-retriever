@@ -4,11 +4,12 @@ import re
 from functions import *
 
 def build_uniswap_list():
+    endpoint="https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v2"
     l=[] #dummy list to store token data
     k=["1",""] #list of ID , ID=token address
     while k[-1]!=k[-2]:                          #till last id different from previous last Id
         t_query=query_builder(k[-1])  #build a valid uniswap query to retrieve a token list from uniswap
-        temp=query_graph(t_query)     #use the previous query to make an api request
+        temp=query_graph(t_query,endpoint)     #use the previous query to make an api request
         l=l + temp["data"]["tokens"]
         try:
             lastId=temp["data"]["tokens"][-1]["id"] #get Id of the last element of the generated token list
@@ -28,11 +29,12 @@ def update_uniswap_list():
         old_list=w.read().splitlines() 
         
 ####### build new list starting from the last element of the old list
+    endpoint="https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v2"
     l=[]
     k=["1",old_list[-1]]
     while k[-1]!=k[-2]:                          
-        t_query=query_builder(k[-1])  
-        temp=query_graph(t_query)     
+        t_query=query_builder(k[-1])
+        temp=query_graph(t_query, endpoint)     
         l=l + temp["data"]["tokens"]
         try:
             lastId=temp["data"]["tokens"][-1]["id"] 
