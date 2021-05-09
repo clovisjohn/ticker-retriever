@@ -3,8 +3,8 @@ import re
 import json
 import spacy
 from bs4 import BeautifulSoup
-from .modules.functions import *
-from .modules.tokenlists import *
+from modules.functions import *
+from modules.tokenlists import *
 
 
 def token_list2(m,checklist=coingecko_list()):
