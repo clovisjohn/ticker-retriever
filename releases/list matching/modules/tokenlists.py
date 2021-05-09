@@ -20,6 +20,6 @@ def pancakeswap_list():
     except FileNotFoundError:
         print("pancakeswap tickers.txt not found")
     
-def full_list()
+def full_list():
     temp=coingecko_list() + uniswap_list() + pancakeswap_list()
     return list( dict.fromkeys(temp) )
