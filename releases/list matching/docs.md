@@ -18,7 +18,7 @@ build_uniswap_list(): Create "uniswap tickers.txt" a uniswap tickers list from s
 update_uniswap_list(): Update "uniswap tickers.txt" with new tickers
 
 ### PancakeSwap functions
-same set of functions
+same set of functions as above
 
 ### token_list2:(input1,input2):
 * input1: chat history file
