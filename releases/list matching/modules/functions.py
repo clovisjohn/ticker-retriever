@@ -32,3 +32,32 @@ return list of messages
         l.append(temp)
         
     return " ".join(l)
+
+def query_builder(lastId):
+    '''
+    take as input a token address
+    return a query made suing this address
+    '''
+    return """{
+       tokens(first: 1000, where: { id_gt: \"""" +  lastId + """" } ){
+         id
+         name
+         symbol
+       }
+     }
+    """ 
+
+def query_graph(query):
+    '''
+input: valid uniswap graphql query
+output: api response as a dictionary
+    '''
+    endpoint = "https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v2"
+    
+    
+    r = requests.post(endpoint, json={"query": query})
+    if r.status_code == 200:
+        parsed_json = json.loads(r.text)
+        return parsed_json
+    else:
+        raise Exception("Query failed to run with a {r.status_code}.")
