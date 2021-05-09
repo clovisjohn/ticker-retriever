@@ -1,4 +1,4 @@
-from funcions import *
+from functions import *
 
 def coingecko_list():
     return default_list("https://api.coingecko.com/api/v3/coins/list")
