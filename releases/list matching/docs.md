@@ -9,3 +9,21 @@ To improve:
 Getting live data instead of manually exporting chat history.
 
 Get token lists as files from  a server which will generate them each hour. This will reduce running time.
+
+
+# How-to-use:
+### Uniswap functions
+build_uniswap_list(): Create "uniswap tickers.txt" a uniswap tickers list from scratch
+
+update_uniswap_list(): Update "uniswap tickers.txt" with new tickers
+
+### PancakeSwap functions
+same set of functions
+
+## how-to-launch
+You can try this script by running launch.py but first you need your chat history file saved as "messages.html"
+
+## Colab workflow
+>!git clone https://github.com/clovisjohn/crypto-filter.git
+
+>!python /content/crypto-filter/releases/list\ matching/launch.py
