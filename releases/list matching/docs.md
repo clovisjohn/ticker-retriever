@@ -38,3 +38,6 @@ You can try this script by running launch.py but first you need your chat histor
 >!git clone https://github.com/clovisjohn/crypto-filter.git
 
 >!python /content/crypto-filter/releases/list\ matching/launch.py
+
+###TODO
+- Use classes for token lists
