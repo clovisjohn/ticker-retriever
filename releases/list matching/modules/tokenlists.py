@@ -2,7 +2,7 @@ from functions import *
 
 def coingecko_list():
     return default_list("https://api.coingecko.com/api/v3/coins/list")
-    
+
 def uniswap_list():
     try:
         with open("uniswap tickers.txt", 'r') as w:
