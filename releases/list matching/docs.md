@@ -14,6 +14,7 @@ Get token lists as files from  a server which will generate them each hour. This
 ## Installation
 ```
 git clone https://github.com/clovisjohn/crypto-filter.git
+```
 
 ## Usage
 You can also run this script by using `launch.py <filepath> <tokenlist>`
