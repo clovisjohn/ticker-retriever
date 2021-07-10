@@ -9,7 +9,7 @@ class subgraph_list():
 		self.exchange=exchange
 		
 	def build_list(self):
-		print("building " + exchange + " token list "
+		print("building " + exchange + " token list ")
 		endpoint=self.endpoint
 		l=[] #dummy list to store token data
 		k=["1",""] #list of ID , ID=token address
