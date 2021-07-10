@@ -31,7 +31,7 @@ class subgraph_list():
 			
 			
 	def update_list():
-		print("ypdating " + exchange + " token list "
+		print("updating " + exchange + " token list ")
 
 		with open(self.exchange + "_tickers.txt", 'r') as w:  ##get old list
 			old_list=w.read().splitlines() 
