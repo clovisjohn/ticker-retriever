@@ -66,5 +66,3 @@ class subgraph_list():
 			with open(self.exchange + "_tickers.txt", 'r') as w:
 				temp=w.read().splitlines() 
 			return temp
-		except FileNotFoundError:
-			print("File not found")
