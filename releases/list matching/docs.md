@@ -32,6 +32,8 @@ launch.py messages.html pancakeswap
 **The chat history file can be exported from the telegram desktop app, select export as html**
 
 ## Colab workflow
->!git clone https://github.com/clovisjohn/crypto-filter.git
+```
+!git clone https://github.com/clovisjohn/crypto-filter.git
 
->!python /content/crypto-filter/releases/list\ matching/launch.py <filepath> <tokenlist>
+!python /content/crypto-filter/releases/list\ matching/launch.py <filepath> <tokenlist>
+```
