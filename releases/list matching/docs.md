@@ -11,33 +11,29 @@ Getting live data instead of manually exporting chat history.
 Get token lists as files from  a server which will generate them each hour. This will reduce running time.
 
 
-# How-to-use:
-### Uniswap functions
-build_uniswap_list(): Create "uniswap tickers.txt" a uniswap tickers list from scratch
+## Installation
+```
+git clone https://github.com/clovisjohn/crypto-filter.git
 
-update_uniswap_list(): Update "uniswap tickers.txt" with new tickers
+## Usage
+You can also run this script by using `launch.py <filepath> <tokenlist>`
 
-### PancakeSwap functions
-same set of functions as above
-
-### token_list2:(input1,input2):
-* input1: chat history file
-* input2: token list
-### Available token lists:
-  * uniswap: uniswap_list()
-  * pancakeswap: pancakeswap_list()
-  * coingecko : coingeclo_list()
-  * All in one: full_list()
-
-## how-to-launch
-You can try this script by running launch.py but first you need your chat history file saved as "messages.html" in the same folder than "crypto-filter"
+### Arguments
+- filepath : The path of the telegram chat history file(html)
+- tokenlist : the token list to use to retrieve tickers. Availabre token lists are :
+              * uniswap
+              * pancakeswap
+              * syshiswap_eth
+              * coingecko
+### Example
+The following line will retrieve token tickers from a telegram chat history using pancakeswap as a source
+```
+launch.py messages.html pancakeswap
+```
 
 **The chat history file can be exported from the telegram desktop app, select export as html**
 
 ## Colab workflow
 >!git clone https://github.com/clovisjohn/crypto-filter.git
 
->!python /content/crypto-filter/releases/list\ matching/launch.py
-
-### TODO
-- Use classes for token lists
+>!python /content/crypto-filter/releases/list\ matching/launch.py <filepath> <tokenlist>
