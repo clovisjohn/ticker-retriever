@@ -9,7 +9,7 @@ class subgraph_list():
 		self.exchange=exchange
 		
 	def build_list(self):
-		print("building " + exchange + " token list ")
+		print("building " + self.exchange + " token list ")
 		endpoint=self.endpoint
 		l=[] #dummy list to store token data
 		k=["1",""] #list of ID , ID=token address
@@ -30,8 +30,8 @@ class subgraph_list():
 		print("Done")
 			
 			
-	def update_list():
-		print("updating " + exchange + " token list ")
+	def update_list(self):
+		print("updating " + self.exchange + " token list ")
 
 		with open(self.exchange + "_tickers.txt", 'r') as w:  ##get old list
 			old_list=w.read().splitlines() 
@@ -61,7 +61,7 @@ class subgraph_list():
 		return "Open the file:"+ self.exchange + "_tickers.txt"+", You must build the list first"
 		
 		
-	def get():
+	def get(self):
 		with open(self.exchange + "_tickers.txt", 'r') as w:
 			temp=w.read().splitlines() 
 		return temp
