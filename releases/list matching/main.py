@@ -4,10 +4,9 @@ import json
 import spacy
 from bs4 import BeautifulSoup
 from modules.functions import *
-from modules.tokenlists import *
 
 
-def get_tickers(m, checklist=coingecko_list()):
+def get_tickers(m, checklist):
     '''
 take a string as input, the string is the chat history file path
 take list as input, a list of tokens ticker
