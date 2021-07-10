@@ -62,7 +62,6 @@ class subgraph_list():
 		
 		
 	def get():
-		try:
-			with open(self.exchange + "_tickers.txt", 'r') as w:
-				temp=w.read().splitlines() 
-			return temp
+		with open(self.exchange + "_tickers.txt", 'r') as w:
+			temp=w.read().splitlines() 
+		return temp
