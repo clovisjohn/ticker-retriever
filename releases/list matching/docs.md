@@ -21,11 +21,8 @@ You can also run this script by using `launch.py <filepath> <tokenlist>`
 
 ### Arguments
 - filepath : The path of the telegram chat history file(html)
-- tokenlist : the token list to use to retrieve tickers. Availabre token lists are :
-              * uniswap
-              * pancakeswap
-              * syshiswap_eth
-              * coingecko
+- tokenlist : the token list to use to retrieve tickers. Availabre token lists are : uniswap, pancakeswap, sushiswap_eth, coingecko
+               
 ### Example
 The following line will retrieve token tickers from a telegram chat history using pancakeswap as a source
 ```
