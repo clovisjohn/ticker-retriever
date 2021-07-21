@@ -10,6 +10,12 @@ Getting live data instead of manually exporting chat history.
 
 Get token lists as files from  a server which will generate them each hour. This will reduce running time.
 
+## Requirement
+* Python 3+
+* json (library)
+* re (regex library)
+* BeautifulSoup
+* spaCy with the pipeline en_core_web_sm
 
 ## Installation
 ```
