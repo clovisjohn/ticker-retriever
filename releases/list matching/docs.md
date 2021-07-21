@@ -8,7 +8,7 @@ to isolate tokens tickers
 To improve: 
 Getting live data instead of manually exporting chat history.
 
-Get token lists as files from  a server which will generate them each hour. This will reduce running time.
+Get token lists as files from a server which will generate them each hour. This will reduce execution time.
 
 ## Requirement
 * Python 3+
