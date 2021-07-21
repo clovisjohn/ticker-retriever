@@ -14,7 +14,7 @@ Get token lists as files from  a server which will generate them each hour. This
 * Python 3+
 * json (library)
 * re (regex library)
-* BeautifulSoup
+* Beautiful Soup
 * spaCy with the pipeline en_core_web_sm
 
 ## Installation
