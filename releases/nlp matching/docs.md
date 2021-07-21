@@ -9,7 +9,7 @@ To improve: Getting live data instead of manually exporting chat history Build a
 ## Requirements
 * Python 3+
 * re (regex library)
-* BeautifulSoup
+* Beautiful Soup
 * spaCy with the pipeline en_core_web_sm
 
 ## how-to-launch
