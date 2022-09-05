@@ -10,6 +10,6 @@ Using pandas, store everything and organize each token with its ticker,number of
 ## HOW-TO-USE:
 There are two ways to use this tool:
 
-* [NLP matching](https://github.com/clovisjohn/ticker-retriever/blob/V0.2/releases/nlp%20matching/docs.md) : This method use nlp through spaCy to identify tickers.
+* [NLP matching](https://github.com/clovisjohn/ticker-retriever/blob/V0.2/releases/nlp%20matching/README.md) : This method use nlp through spaCy to identify tickers.
 
-* [List matching](https://github.com/clovisjohn/ticker-retriever/blob/V0.2/releases/list%20matching/docs.md): This method use spaCy to isolate entities and a predefined list of tickers to identify tickers from the chat.
+* [List matching](https://github.com/clovisjohn/ticker-retriever/blob/V0.2/releases/list%20matching/README.md): This method use spaCy to isolate entities and a predefined list of tickers to identify tickers from the chat.
